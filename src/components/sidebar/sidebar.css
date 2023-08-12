@@ -1,0 +1,20 @@
+.sidebar-section{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: .8rem;
+    background-color: transparent;
+}
+.sidebar-item{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+}
+.sidebar-box{
+    padding: .6rem;
+    width: 88%;
+    height: auto;
+    border-radius: .5rem;
+    margin-bottom: 100vh;
+}
