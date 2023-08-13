@@ -17,7 +17,6 @@ const App = () => {
     const { user } = useContext(AuthContext);
     return (
         <div>
-            <h1>HELLO</h1>
             <HashRouter>
                 <Routes>
                     <Route path="/" element={user ? <Home /> : <Register />} />
