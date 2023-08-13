@@ -31,6 +31,7 @@ ReactDOM.render(
     <React.StrictMode>
       <AuthContextProvider>
         <div style={{ backgroundColor: theme.palette.background.default }}>
+          <h1>hi</h1>
           <App />
         </div>
       </AuthContextProvider>
