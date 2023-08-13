@@ -22,6 +22,7 @@ export default function Home() {
           <Grid item xs={0} md={2.5} style={{ width: "100%" }}>
             <Box style={{ flex: 1}}></Box>
           </Grid>
+          
           <Sidebar />
           <Feed />
 
