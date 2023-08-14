@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/soundchat/static/css/main.7b6d215e.css",
-    "main.js": "/soundchat/static/js/main.04340918.js",
+    "main.js": "/soundchat/static/js/main.97f77b3c.js",
     "index.html": "/soundchat/index.html",
     "main.7b6d215e.css.map": "/soundchat/static/css/main.7b6d215e.css.map",
-    "main.04340918.js.map": "/soundchat/static/js/main.04340918.js.map"
+    "main.97f77b3c.js.map": "/soundchat/static/js/main.97f77b3c.js.map"
   },
   "entrypoints": [
     "static/css/main.7b6d215e.css",
-    "static/js/main.04340918.js"
+    "static/js/main.97f77b3c.js"
   ]
 }
