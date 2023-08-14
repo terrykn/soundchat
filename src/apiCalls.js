@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Navigate } from "react-router-dom";
 
 const api = axios.create({ baseURL: "https://soundchat-api.onrender.com" })
 
@@ -7,6 +8,7 @@ export const loginCall = async (userCredential, dispatch) => {
     try{
         const res = await api.post("/api/auth/login", userCredential);
         dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+        return <Navigate to="" />;
     } catch(err) {
         dispatch({ type: "LOGIN_FAILURE", payload: err });
     }
