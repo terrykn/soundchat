@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const api = axios.create({ baseURL: "http://localhost:8800/api" })
+const api = axios.create({ baseURL: "https://soundchat-api.onrender.com" })
 
 export const loginCall = async (userCredential, dispatch) => {
     dispatch({ type: "LOGIN_START" });

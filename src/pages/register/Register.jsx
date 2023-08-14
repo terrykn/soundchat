@@ -20,7 +20,7 @@ import { loginCall } from "../../apiCalls";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
-axios.defaults.baseURL = "http://localhost:8800";
+axios.defaults.baseURL = "https://soundchat-api.onrender.com";
 
 const Register = () => {
     const username = useRef();
@@ -43,8 +43,8 @@ const Register = () => {
             password: password.current.value,
         };
         try {
-            await axios.post("/api/auth/register", user);
-            navigate("/login");
+            await axios.post("/auth/register", user);
+            navigate("/soundchat/#/login");
         } catch(err) {
             console.log(err);
         }
@@ -67,7 +67,7 @@ const Register = () => {
                 sm={4}
                 md={7}
                 sx={{
-                    backgroundImage: `url('/assets/stacked_radios.png')`,
+                    backgroundImage: `url('/public/assets/stacked_radios.png')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     
@@ -77,7 +77,7 @@ const Register = () => {
                 <Box sx={{ my: 8, mx: 4, display: 'flex', flexDirection: 'column', alignItems: 'center',}}>
 
                     <Avatar sx={{ width: 70, height: 70 }}>
-                        <img src='/assets/audiochat_logo.png' style={{ width: '100%', height: '100%'}}/>
+                        <img src='/public/assets/audiochat_logo.png' style={{ width: '100%', height: '100%'}}/>
                     </Avatar>
 
                     <Typography variant="h5">
