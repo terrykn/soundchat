@@ -67,7 +67,7 @@ const Register = () => {
                 sm={4}
                 md={7}
                 sx={{
-                    backgroundImage: `url('../public/assets/stacked_radios.png')`,
+                    backgroundImage: `url('/assets/stacked_radios.png')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     
@@ -77,7 +77,7 @@ const Register = () => {
                 <Box sx={{ my: 8, mx: 4, display: 'flex', flexDirection: 'column', alignItems: 'center',}}>
 
                     <Avatar sx={{ width: 70, height: 70 }}>
-                        <img src='../public/assets/audiochat_logo.png' style={{ width: '100%', height: '100%'}}/>
+                        <img src='/assets/audiochat_logo.png' style={{ width: '100%', height: '100%'}}/>
                     </Avatar>
 
                     <Typography variant="h5">
