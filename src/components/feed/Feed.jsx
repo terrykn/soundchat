@@ -10,7 +10,7 @@ import { AuthContext } from "../../context/AuthContext";
 import { Grid } from "@mui/material";
 import { useTheme } from "@mui/material";
 
-axios.defaults.baseURL = "http://localhost:8800";
+axios.defaults.baseURL = "https://soundchat-api.onrender.com";
 
 const Feed = ({ username }) => {
     const [posts, setPosts] = useState([]);

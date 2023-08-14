@@ -98,7 +98,7 @@ const Register = () => {
 
                         <Grid container>
                             <Grid item xs>
-                                <a href="/login">Already have an account?</a>
+                                <a href="/#/login">Already have an account?</a>
                             </Grid>
                         </Grid>
 

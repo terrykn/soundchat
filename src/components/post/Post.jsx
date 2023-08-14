@@ -11,7 +11,7 @@ import { Avatar } from "@mui/material";
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import LyricsRoundedIcon from '@mui/icons-material/LyricsRounded';
 
-axios.defaults.baseURL = "http://localhost:8800";
+axios.defaults.baseURL = "https://soundchat-api.onrender.com";
 
 const formatDate = (dateString) => {
     const date = new Date(dateString);

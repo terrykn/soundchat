@@ -74,7 +74,7 @@ export default function Login() {
 
                         <Grid container style={{ marginTop: ".5rem" }}>
                             <Grid item xs>
-                                <a href="/register">Don't have an account yet?</a>
+                                <a href="/#/register">Don't have an account yet?</a>
                             </Grid>
                         </Grid>
 
