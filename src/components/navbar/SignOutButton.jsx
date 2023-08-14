@@ -13,7 +13,7 @@ const SignOutButton = () => {
   const theme = useTheme();
 
   return (
-    <a href="/login" style={{ color: "inherit", backgroundColor: theme.palette.primary.main }}>
+    <a href="/#/login" style={{ color: "inherit", backgroundColor: theme.palette.primary.main }}>
       <LogoutIcon className="navbar-item" style={{ backgroundColor: theme.palette.primary.main, cursor: "pointer" }} onClick={handleSignOut} />
     </a>
   );

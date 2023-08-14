@@ -15,6 +15,18 @@ import { AuthContext } from "./context/AuthContext";
 
 const App = () => {
     const { user } = useContext(AuthContext);
+    const [loading, setLoading] = useState(true); 
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false); 
+        }, 2000); 
+    }, []);
+
+    if(loading){
+        return <div>Loading...</div>; 
+    }
+
     return (
         <div>
             <HashRouter>
