@@ -71,7 +71,7 @@ export default function Login() {
                             >
                                 {isFetching ? (
                                     <div>
-                                        <LinearProgress style={{ fontSize: "50px" }}/>
+                                        <LinearProgress style={{ color: "blue", fontSize: "50px" }}/>
                                         <h3>Waiting for back-end to spin up</h3>
                                     </div>
                                 ):("Sign In")}
@@ -93,7 +93,7 @@ export default function Login() {
                                     >
                                     {isFetching ? (
                                         <div>
-                                            <LinearProgress style={{ fontSize: "50px" }}/>
+                                            <LinearProgress style={{ color: "blue", fontSize: "50px" }}/>
                                             <h3>Waiting for back-end to spin up</h3>
                                         </div>
                                     ):("Try the site as a Guest?")}

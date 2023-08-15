@@ -93,7 +93,12 @@ const Register = () => {
                         <Button type="submit" 
                             fullWidth variant="contained" 
                             sx={{ mt: 1, mb: 1, backgroundColor: '#00b300', '&:hover': {backgroundColor: '#009900'}}}>
-                                Register
+                                {isFetching ? (
+                                    <div>
+                                        <LinearProgress style={{ color: "blue", fontSize: "50px" }}/>
+                                        <h3>Waiting for back-end to spin up</h3>
+                                    </div>
+                                ):("Register")}
                             </Button>
 
                         <Grid container>
@@ -110,7 +115,12 @@ const Register = () => {
                                     sx={{ mt: 1, mb: 1, backgroundColor: '#00b300', '&:hover': {backgroundColor: '#009900'}}}
                                     onClick={handleGuestLogin}
                                     >
-                                        {isFetching ? (<LinearProgress />):("Try the site as a Guest?")}
+                                    {isFetching ? (
+                                        <div>
+                                            <LinearProgress style={{ color: "blue", fontSize: "50px" }}/>
+                                            <h3>Waiting for back-end to spin up</h3>
+                                        </div>
+                                    ):("Try the site as a Guest?")}
                                 </button>
                             </Grid>
                         </Grid>

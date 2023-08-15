@@ -8,7 +8,6 @@ export const loginCall = async (userCredential, dispatch) => {
     try{
         const res = await api.post("/api/auth/login", userCredential);
         dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
-        return <Navigate to="" />;
     } catch(err) {
         dispatch({ type: "LOGIN_FAILURE", payload: err });
     }
