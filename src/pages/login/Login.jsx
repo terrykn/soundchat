@@ -69,7 +69,12 @@ export default function Login() {
                             fullWidth variant="contained" 
                             sx={{ mt: 1, mb: 1, backgroundColor: '#00b300', '&:hover': {backgroundColor: '#009900'}}}
                             >
-                                {isFetching ? (<LinearProgress />):("Sign In")}
+                                {isFetching ? (
+                                    <div>
+                                        <LinearProgress style={{ fontSize: "50px" }}/>
+                                        <h3>Waiting for back-end to spin up</h3>
+                                    </div>
+                                ):("Sign In")}
                         </Button>
 
                         <Grid container style={{ marginTop: ".5rem" }}>
@@ -86,7 +91,12 @@ export default function Login() {
                                     sx={{ mt: 1, mb: 1, backgroundColor: '#00b300', '&:hover': {backgroundColor: '#009900'}}}
                                     onClick={handleGuestLogin}
                                     >
-                                        {isFetching ? (<LinearProgress />):("Try the site as a Guest?")}
+                                    {isFetching ? (
+                                        <div>
+                                            <LinearProgress style={{ fontSize: "50px" }}/>
+                                            <h3>Waiting for back-end to spin up</h3>
+                                        </div>
+                                    ):("Try the site as a Guest?")}
                                 </button>
                             </Grid>
                         </Grid>
